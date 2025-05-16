@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div class="container text-center mt-3">
+            <h2 class="header">Calculator</h2>
+            <div class="input-num">
+                <input type="text" id="num1" placeholder="Enter the number" class="input">
+                <input type="text" id="num2" placeholder="Enter the number" class="input">
+            </div>
+
+            <div class="buttons d-flex align-items-center justify-content-center mt-3 mb-3">
+                <button class="btn" id="addition" onclick="sum()">+</button>
+                <button class="btn" id="subtract" onclick="sub()">-</button>
+                <button class="btn" id="multiple" onclick="multi()">*</button>
+                <button class="btn" id="divison" onclick="div()">/</button>
+            </div>
+
+            <div class="display">
+                <input type="number" id="result" placeholder="Result" readonly class="input">
+            </div>
+
+            <button class="clear-btn bg-danger" onclick="clears()">Clear</button>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
